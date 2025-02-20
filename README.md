@@ -1,4 +1,4 @@
-# Used Laptop Donation Application
+# Laptop Donation Application
 
 A J2EE Web Application designed to supply used laptops to rural students by connecting donors, students, and an admin interface. This application allows donors to donate laptops, students to request laptops, and an admin to manage and approve these requests.
 
