@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      color: #9ca3af;
+    }
+    .admin-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #a343e8;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .admin-button:hover {
+      background-color: #7025a6;
+    }
+    section {
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      text-align: center;
+      min-width: 180px;
+    }
+    .button:hover {
+      background-color: #2563eb;
+    }
+    .button-alt {
+      background-color: #10b981;
+      color: white;
+    }
+    .button-alt:hover {
+      background-color: #059669;
+    }
+    .hero {
+      background-color: #f3f4f6;
+      padding: 4rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 0.5rem;
+    }
+    .image-carousel {
+      margin-top: 1rem;
+      overflow: hidden;
+      width: 100%;
+    }
+    .carousel-track {
+      display: flex;
+      gap: 3rem;
+      animation: scroll 20s linear infinite;
+    }
+    .carousel-track img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Empower Rural Students with Digital Access</h1>
+    <p>Your used laptop can change lives in rural India</p>
+    <a href="adminLogin.jsp" class="admin-button">Admin Login</a>
+  </header>
+
+  <section class="image-carousel">
+    <div class="carousel-track">
+      <img src="https://radiancemedia.in/uploads/thumbnail/1690987824_Digital-India-for-Rural-India1.jpg" alt="Image 1" />
+      <img src="https://www.governancenow.com/temp/aws_ebook.jpg" alt="Image 2" />
+      <img src="https://indbiz.gov.in/wp-content/uploads/2021/07/MicrosoftTeams-image.jpg" alt="Image 3" />
+      <img src="https://www.indiancentury.in/wp-content/uploads/2023/08/Digitalization-in-Rural-India.jpg" alt="Image 4" />
+      <img src="https://media.istockphoto.com/id/2075602123/photo/group-of-rural-school-girls-in-uniform-sitting-in-school-corridor-working-on-laptop-concept.jpg?s=612x612&w=0&k=20&c=vgw1jjSrxfKt3dvYvwKAeuq03XF4ZlFVZR1kSwQ8AT8=" alt="Image 5" />
+    </div>
+  </section>
+  
+  <section>
+    <h2>Get Started</h2>
+    <div class="button-container">
+      <a href="studentLogin.jsp" class="button">Login as Student</a>
+      <a href="donorLogin.jsp" class="button">Login as Donor</a>
+      <a href="studentRegister.jsp" class="button button-alt">Register as Student</a>
+      <a href="donorRegister.jsp" class="button button-alt">Register as Donor</a>
+    </div>
+  </section>
+
+  <section class="hero">
+    <h2>Donate Your Used Laptops, Make a Difference</h2>
+    <p>Join us in bridging the digital divide for students in rural areas. Your contribution can bring education and opportunities closer to those in need.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Digital Empowerment Platform. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
