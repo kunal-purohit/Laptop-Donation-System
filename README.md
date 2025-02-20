@@ -1,17 +1,14 @@
-# Used Laptop Supply Application
+# Used Laptop Donation Application
 
-A J2EE web application designed to supply used laptops to rural students by connecting donors, students, and an admin interface. This application allows donors to donate laptops, students to request laptops, and an admin to manage and approve these requests.
+A J2EE Web Application designed to supply used laptops to rural students by connecting donors, students, and an admin interface. This application allows donors to donate laptops, students to request laptops, and an admin to manage and approve these requests.
 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Technologies](#technologies)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Process Flow Diagram](#process-flow-diagram)
-- [Installation and Setup](#installation-and-setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -19,6 +16,15 @@ This application was built using Java EE (J2EE) and provides a user-friendly int
 - **Donors:** Can register, log in, donate laptops, view approved donation requests, and log out.
 - **Students:** Can register, log in, request laptops, view the status of their requests, and log out.
 - **Admin:** Can log in, view student laptop requests, approve requests, and log out.
+
+## Technologies
+
+This project leverages a range of technologies and tools:
+- **Java EE (J2EE):** The core framework used for building enterprise-level web applications.
+- **Servlets & JSP:** For handling server-side processing and rendering dynamic web pages.
+- **Apache Tomcat:** As the application server for deploying the web application.
+- **Relational Database (MySQL):** To store user, donation, and request data.
+- **HTML/CSS/JavaScript:** For front-end development and enhancing user experience.
 
 ## Features
 
@@ -38,14 +44,15 @@ This application was built using Java EE (J2EE) and provides a user-friendly int
 
 ## Architecture
 
-The application follows a multi-tier architecture:
-- **Presentation Layer:** JSP/Servlets that manage user interface and interactions.
-- **Business Layer:** Java classes that handle business logic and user roles.
-- **Data Layer:** A relational database to store user, laptop, and request details.
+This application follows the Model-View-Controller (MVC) architecture to separate concerns and improve maintainability:
+
+- **Model:** Represents the application's data and business logic. It includes Java classes that interact with the database and perform data operations.
+- **View:** Comprises the JSP pages and HTML/CSS used to render the user interface.
+- **Controller:** Consists of Servlets and Java classes that handle user requests, process inputs, and coordinate responses by interacting with the Model and rendering the appropriate View.
+
+This clear separation makes it easier to manage, test, and extend the application.
 
 ## Process Flow Diagram
-
-Below is the Mermaid code for the process flow diagram that illustrates the application's user interactions:
 
 ```mermaid
 graph TB
